@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 36 41% 98%;
+    --foreground: 36 8% 15%;
+    --card: 36 41% 98%;
+    --card-foreground: 36 8% 15%;
+    --popover: 36 41% 98%;
+    --popover-foreground: 36 8% 15%;
+    --primary: 36 100% 50%;
+    --primary-foreground: 36 8% 15%;
+    --secondary: 36 20% 92%;
+    --secondary-foreground: 36 8% 15%;
+    --muted: 36 20% 92%;
+    --muted-foreground: 36 8% 45%;
+    --accent: 36 20% 92%;
+    --accent-foreground: 36 8% 15%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 36 41% 98%;
+    --border: 36 20% 87%;
+    --input: 36 20% 87%;
+    --ring: 36 100% 50%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 36 8% 15%;
+    --foreground: 36 41% 98%;
+    --card: 36 8% 15%;
+    --card-foreground: 36 41% 98%;
+    --popover: 36 8% 15%;
+    --popover-foreground: 36 41% 98%;
+    --primary: 36 100% 50%;
+    --primary-foreground: 36 8% 15%;
+    --secondary: 36 8% 25%;
+    --secondary-foreground: 36 41% 98%;
+    --muted: 36 8% 25%;
+    --muted-foreground: 36 20% 70%;
+    --accent: 36 8% 25%;
+    --accent-foreground: 36 41% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 36 41% 98%;
+    --border: 36 8% 25%;
+    --input: 36 8% 25%;
+    --ring: 36 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.image-slider .swiper-pagination-bullet {
+  @apply bg-white/70 opacity-70;
+}
+
+.image-slider .swiper-pagination-bullet-active {
+  @apply bg-primary opacity-100;
+}
+
+.image-slider .swiper-button-next,
+.image-slider .swiper-button-prev {
+  @apply text-white;
+}
+
